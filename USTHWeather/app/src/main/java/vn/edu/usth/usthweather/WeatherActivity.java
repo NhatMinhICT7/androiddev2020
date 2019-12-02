@@ -33,12 +33,11 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i("onDestroyed","Weather activity is being destroyed");
     }
 
-    //initial creation of the fragment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-        Log.i("cmt:","onCreate method");
+        Log.i("cmt:","Weather activity is being created");
 
         ForecastFragment t= new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(
